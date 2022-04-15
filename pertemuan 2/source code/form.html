@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ini merupakan FORM</title>
+</head>
+<body>
+
+    <form action="/process.php">
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" placeholder="Input your Username"/><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Input your Password"/><br><br>
+
+        <label>Jenis Kelamin</label><br>
+        <label for="jenis-kelamin">Pria</label>
+        <input type="radio" id="jenis-kelamin" name="jenis-kelamin" value="Pria">
+
+        <label for="jenis-kelamin">Wanita</label>
+        <input type="radio" id="jenis-kelamin-wanita" name="jenis-kelamin"  value="Wanita"><br><br>
+
+        <label>Rentang Usia</label><br>
+        <label for="rentang-usia-1">Usia 10-15 Tahun</label>
+        <input type="checkbox" name="rentang-usia-1" id="rentang-usia-1" value="10 - 15 Tahun"><br>
+
+        <label for="rentang-usia-2">Usia 16-20 Tahun</label>
+        <input type="checkbox" name="rentang-usia-2" id="rentang-usia-2" value="16 - 20 Tahun"><br>
+
+        <label for="rentang-usia-3">Usia 21-25 Tahun</label>
+        <input type="checkbox" name="rentang-usia-3" id="rentang-usia-3" value="21 - 25 Tahun"><br><br>
+
+        <input type="button" value="Submit"/>
+
+    </form>
+    
+</body>
+</html>
