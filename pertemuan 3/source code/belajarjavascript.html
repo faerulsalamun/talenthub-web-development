@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar javascript</title>
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <style>
+        #button {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <label for="username">Username</label><br/>
+    <input style="width: 180px;" type="text" id="username" name="username" placeholder="Please insert your username"/><br><br>
+
+    <label for="password">Password</label><br/>
+    <input style="width:180px" type="password" id="password" class="password" name="password" placeholder="Please insert your password"><br><br>
+
+    <input type="button" value="Submit" id="button" onclick="login()">
+</body>
+
+<script>
+
+    function login(){
+        // const username = document.getElementById("username").value;
+        const username = $("#username").val();
+        const password = $(".password").val();
+
+        // Username faerul dan password 1234
+        if(username === ''){
+            alert("Username tidak boleh kosong");
+        } else if(password === ''){
+            alert("Password tidak boleh kosong")
+        } else if(username === 'faerul' && password === '1234'){
+            window.location = "home.html"
+        } else {
+            alert("Username atau password anda salah")
+        }
+    }
+
+</script>
+</html>
